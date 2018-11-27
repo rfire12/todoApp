@@ -1,0 +1,40 @@
+{
+  "todos": [
+    {
+      "id": "01",
+      "text": "this is a todo",
+      "quantity": 0,
+      "comments": [
+        {
+          "id": "com01",
+          "comment": "Hi there"
+        }
+      ],
+      "state": "Created"
+    },
+    {
+      "id": "02",
+      "text": "this is not a todo",
+      "quantity": 0,
+      "comments": [
+        {
+          "id": "com02",
+          "comment": "Hello"
+        }
+      ],
+      "state": "Created"
+    },
+    {
+      "id": "03",
+      "text": "Example",
+      "quantity": 0,
+      "comments": [
+        {
+          "id": "com03",
+          "comment": "What up"
+        }
+      ],
+      "state": "Created"
+    }
+  ]
+}
