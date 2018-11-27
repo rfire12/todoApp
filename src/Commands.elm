@@ -40,7 +40,7 @@ commentsDecoder : Decode.Decoder Comment
 commentsDecoder =
     decode Comment
         |> required "id" Decode.string
-        |> required "Comment" Decode.string
+        |> required "comment" Decode.string
 
 
 decodeState : Decode.Decoder TodoState

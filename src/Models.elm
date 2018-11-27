@@ -1,22 +1,24 @@
-module Models exposing (Model, Todo)
+module Models exposing (..)
+import RemoteData exposing (WebData)
 
 
 type alias Model =
-    { todos : Maybe List Todo
+    { todos : WebData (List Todo)
+    , todoInput : String
     }
 
 
 type alias Todo =
-    { id : TodoId
-    , name : String
+    { id : String
+    , text : String
     , quantity : Int
-    , comments : Maybe List Comment
+    , comments : List Comment
     , state : TodoState
     }
 
 
 type alias Comment =
-    { id : CommentId
+    { id : String
     , comment : String
     }
 
@@ -33,3 +35,10 @@ type alias TodoId =
 
 type alias CommentId =
     String
+
+
+initialModel : Model
+initialModel =
+    { todos = RemoteData.Loading
+    , todoInput = ""
+    }
