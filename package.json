@@ -6,6 +6,7 @@
   "dependencies": {
     "ace-css": "^1.0.1",
     "css-loader": "^0.23.1",
+    "elm": "^0.18.0",
     "elm-analyse": "^0.15.0",
     "elm-webpack-loader": "^4.5.0",
     "file-loader": "^0.8.5",
@@ -18,9 +19,7 @@
     "webpack-dev-middleware": "^1.6.1",
     "webpack-dev-server": "^1.16.5"
   },
-  "devDependencies": {
-    "elm": "^0.19.0-bugfix2"
-  },
+  "devDependencies": {},
   "scripts": {
     "api": "node api.js",
     "build": "webpack",
