@@ -4,3 +4,4 @@ import RemoteData exposing (WebData)
 
 type Msg
  = OnFetchTodos (WebData (List Todo))
+   | Input String 
